@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<!-- saved from url=(0060)http://www.netzmafia.de/skripten/hardware/Roehren/74141.html -->
+<!DOCTYPE html PUBLIC "-;W3C;DTD HTML 4.01 Transitional;EN" ""><HTML><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+ 
+<META name="robots" content="all"> 
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="revisit-after" content="10 days"> 
+<META name="Reply-To" content="webmaster@netmafia.de"> 
+<META name="keywords" content="Notizen Projekt Praktiku"> 
+<META name="description" content="Notizen zum Projektpraktikum"> 
+<TITLE>Projekt</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY text="#000000" bgcolor="#ffffff" link="#0000ff" alink="#ff0000" vlink="#ff00ff">
+<CENTER>
+<TABLE width="90%" border="0">
+  <TBODY>
+  <TR>
+    <TD align="LEFT"><IMG src=""></TD>
+    <TD align="RIGHT">
+      <H3>Anzeigeröhren</H3><BR><B><I>von Prof. Jürgen 
+  Plate</I></B></TD></TR></TBODY></TABLE></CENTER>
+<HR>
+
+<H2>74141 BCD-zu-dezimal-Decoder</H2>
+<P>Der 74141 ist ein BCD-zu-dezimal-Decoder, der speziell für die Ansteuerung 
+von Nixi-Röhren entwickelt wurde. Er ist das Nachfolgemodell zum 7441, der für 
+die Pseudotetraden (sedezimal A bis F) eine "seltsame" Ausgabe lieferte (zum 
+Teil mehrere Segment gleichzeitig). Er ist immer noch erhältlich, etwa bei EBay 
+oder bei Mouser (dort zu einem sehr hohen Preis). </P>
+<P>
+<TABLE width="600" border="0" cellspacing="2" cellpadding="0">
+  <TBODY>
+  <TR>
+    <TD width="50%" valign="TOP"><IMG width="350" height="321" align="BOTTOM" 
+      src="K155ID1_Datasheet-Dateien/74141_1.gif" border="0"><BR>
+      <UL>
+        <LI> Treiber für gasgefüllte Kaltkathoden-Anzeigeröhren    
+        <LI> voll decodiert, Pseudotetraden schalten alle Ausgänge aus    
+        <LI> Klemmdioden am Eingang    
+        <LI> maximal Sperrspannung 60 V    
+        <LI> maximaler Leckstrom 50&#956;A    
+        <LI> russischer Äquivalenztyp: K155ID1    </LI></UL><IMG align="BOTTOM" 
+      src="K155ID1_Datasheet-Dateien/K155.gif" border="0"><BR></TD>
+    <TD width="50%">
+      <CENTER>Wahrheitstabelle<BR><SMALL>
+      <TABLE border="1" cellspacing="0" cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD align="CENTER" valign="MIDDLE" bgcolor="#cccccc" colspan="4">    
+                Input</TD>
+          <TD align="CENTER" valign="MIDDLE" bgcolor="#cccccc" rowspan="2">    
+                Output<BR>        on</TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE" bgcolor="#cccccc">    
+                D</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE" bgcolor="#cccccc">    
+                C</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE" bgcolor="#cccccc">    
+                B</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE" bgcolor="#cccccc">    
+                A</TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>0</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>1</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>2</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>3</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>4</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>5</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>6</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>7</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>8</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>9</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        0</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR>
+        <TR>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">        1</TD>
+          <TD width="20%" align="CENTER" valign="MIDDLE">
+            <P>none</P></TD></TR></TBODY></TABLE></SMALL></CENTER></TD></TR></TBODY></TABLE>
+<P></P>
+<P><IMG width="484" height="639" src="K155ID1_Datasheet-Dateien/74141_2.gif" 
+border="0"> </P>
+<P><B>Absolute maximum ratings over operating free-air temperature range:</B> 
+<BR>
+<TABLE width="700" border="1" cellspacing="0" cellpadding="1">
+  <TBODY>
+  <TR>
+    <TD width="66%">    Supply Voltage V<FONT size="-1">cc</FONT></TD>
+    <TD width="34%">    7 V</TD></TR>
+  <TR>
+    <TD width="66%">    Input voltage</TD>
+    <TD width="34%">    5.5 V</TD></TR>
+  <TR>
+    <TD width="66%">    Current into any output (off state)</TD>
+    <TD width="34%">    2 mA</TD></TR>
+  <TR>
+    <TD width="66%">    Operating free-air temp. range</TD>
+    <TD width="34%">    0°C to 70°C</TD></TR>
+  <TR>
+    <TD width="66%">    Storage temp. range</TD>
+    <TD width="34%">    -65°C to 150°C</TD></TR></TBODY></TABLE>
+<P></P>
+<P><B>Recommended operating conditions:</B> <BR>
+<TABLE width="700" border="1" cellspacing="0" cellpadding="1">
+  <TBODY>
+  <TR>
+    <TD width="48%">&nbsp;</TD>
+    <TD width="13%" bgcolor="#cccccc">    Min</TD>
+    <TD width="12%" bgcolor="#cccccc">    Nom</TD>
+    <TD width="12%" bgcolor="#cccccc">    Max</TD>
+    <TD width="15%" bgcolor="#cccccc">    Unit</TD></TR>
+  <TR>
+    <TD width="48%">    Supply Voltage V<FONT size="-1">cc</FONT></TD>
+    <TD width="13%">    4.75</TD>
+    <TD width="12%">    5</TD>
+    <TD width="12%">    5.25</TD>
+    <TD width="15%">    V</TD></TR>
+  <TR>
+    <TD width="48%">    Off-state output voltage</TD>
+    <TD width="13%">    &nbsp;</TD>
+    <TD width="12%">    &nbsp;</TD>
+    <TD width="12%">    60</TD>
+    <TD width="15%">    V</TD></TR>
+  <TR>
+    <TD width="48%">    Free-air temp T<FONT size="-2">A</FONT></TD>
+    <TD width="13%">    0</TD>
+    <TD width="12%">    &nbsp;</TD>
+    <TD width="12%">    70</TD>
+    <TD width="15%">    °C</TD></TR></TBODY></TABLE>
+<P></P>
+<P><B>Electrical characteristics over recommended operating free-air temp. 
+range:</B> <BR>
+<TABLE width="700" border="1" cellspacing="0" cellpadding="1">
+  <TBODY>
+  <TR>
+    <TD height="28" bgcolor="#cccccc" colspan="2">    Parameter</TD>
+    <TD height="28" bgcolor="#cccccc" colspan="2">    Test Conditions</TD>
+    <TD width="7%" height="28" bgcolor="#cccccc">    Min</TD>
+    <TD width="7%" height="28" bgcolor="#cccccc">    Typ</TD>
+    <TD width="7%" height="28" bgcolor="#cccccc">    Max</TD>
+    <TD width="7%" height="28" bgcolor="#cccccc">    Unit</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    V<FONT size="-2">IH</FONT> High-level 
+      input Voltage</TD>
+    <TD colspan="2">    &nbsp;</TD>
+    <TD width="7%" height="26">    2</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    V</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    V<FONT size="-2">IL</FONT> Low-level input 
+      voltage</TD>
+    <TD colspan="2">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    0.8</TD>
+    <TD width="7%" height="26">    V</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    V<FONT size="-2">IK</FONT> Input clamp 
+      voltage</TD>
+    <TD colspan="2">    V<FONT size="-1">cc </FONT>= 4.75, I<FONT size="-2">I 
+      </FONT>=    -5mA</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    -1.5</TD>
+    <TD width="7%" height="26">    V</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    V<FONT size="-2">o(on)</FONT> On-state 
+      output voltage</TD>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 4.75, I<FONT 
+      size="-2">o</FONT>    = 7mA</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    2.5</TD>
+    <TD width="7%" height="26">    V</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    V<FONT size="-2">o(off)</FONT> Off-state 
+      output voltage for input    counts 0 - 9</TD>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 5.25, I<FONT 
+      size="-2">o</FONT>    = 0.5mA</TD>
+    <TD width="7%" height="26">    60</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    V</TD></TR>
+  <TR>
+    <TD height="26" colspan="2">    I<FONT size="-2">o(off)</FONT> Off-state 
+      reverse current</TD>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 5.25, V<FONT 
+      size="-2">o</FONT>    = 55V</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    50</TD>
+    <TD width="7%" height="26">&#956;A</TD></TR>
+  <TR>
+    <TD rowspan="2" colspan="2">    I<FONT size="-2">o(off)</FONT> Off state 
+      reverse current for    input counts (hexadecimal) A - F</TD>
+    <TD width="14%" rowspan="2">    V<FONT size="-1">cc</FONT> = 5.25<BR>    
+      V<FONT size="-2">o</FONT> = 30V</TD>
+    <TD width="14%" height="26">    T<FONT size="-2">A</FONT> = 55°C</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    5</TD>
+    <TD width="7%" rowspan="2">&#956;A</TD></TR>
+  <TR>
+    <TD width="14%" height="26">    T<FONT size="-2">A</FONT> = 70°C</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    15</TD></TR>
+  <TR>
+    <TD colspan="2">    I<FONT size="-2">I</FONT> Input current at max. input 
+      voltage</TD>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 5.25, V<FONT 
+      size="-2">I</FONT>    = 5.5V</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    1</TD>
+    <TD width="7%" height="26">    mA</TD></TR>
+  <TR>
+    <TD width="29%" rowspan="2">    I<FONT size="-2">IH</FONT> High-level 
+      input current</TD>
+    <TD width="15%" height="26">    Input A</TD>
+    <TD rowspan="2" colspan="2">    V<FONT size="-1">cc</FONT> = 5.25, V<FONT 
+      size="-2">I</FONT>    = 2.4V</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    40</TD>
+    <TD width="7%" rowspan="2">&#956;A</TD></TR>
+  <TR>
+    <TD width="15%" height="26">    Input B,C,D</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    80</TD></TR>
+  <TR>
+    <TD width="29%" rowspan="2">    I<FONT size="-2">IL</FONT> Low-level input 
+      current</TD>
+    <TD width="15%" height="26">    Input A</TD>
+    <TD rowspan="2" colspan="2">    V<FONT size="-1">cc</FONT> = 5.25, V<FONT 
+      size="-2">I</FONT>    = 0.4V</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    -1.6</TD>
+    <TD width="7%" rowspan="2">    mA</TD></TR>
+  <TR>
+    <TD width="15%" height="26">    Input B,C,D</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    -3.2</TD></TR>
+  <TR>
+    <TD rowspan="2" colspan="2">    I<FONT size="-2">cc</FONT> Supply Current 
+      (all inputs grounded    and outputs open).</TD>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 5V, T<FONT 
+      size="-2">A</FONT> =    25°C</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    16</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD rowspan="2">    mA</TD></TR>
+  <TR>
+    <TD colspan="2">    V<FONT size="-1">cc</FONT> = 5.25</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    &nbsp;</TD>
+    <TD width="7%" height="26">    25</TD></TR></TBODY></TABLE>
+<P></P>
+<P><IMG width="550" height="216" src="K155ID1_Datasheet-Dateien/74141_3.gif" 
+border="0"> </P>
+<CENTER>
+<TABLE width="100%" border="0">
+  <TBODY>
+  <TR>
+    <TD align="CENTER" valign="BOTTOM"><IMG src="K155ID1_Datasheet-Dateien/up.gif" 
+      border="0"> <A href="http://www.netzmafia.de/skripten/hardware/Roehren/index.html">Zum 
+      Inhaltsverzeichnis</A></TD></TR></TBODY></TABLE></CENTER>
+<P>
+<HR>
+
+<H6><I>Copyright © Hochschule München, FK 04, Prof. Jürgen 
+Plate</I></H6></BODY></HTML>
